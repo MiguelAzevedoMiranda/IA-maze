@@ -99,3 +99,18 @@ dfs = AgentMaze(env,
                 lambda s,s_neighbors: 1.0, 
                 lambda s,G: 0.0)
 ```
+
+### 🚀 Como Executar o Projeto
+
+
+```bash
+# Clone o repositório
+$ git clone [https://github.com/MiguelAzevedoMiranda/IA-maze.git]
+
+# Instale as dependências
+$ pip install numpy
+
+# Execute as migrações do banco de dados
+$ python3 simulation.py
+
+```
