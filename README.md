@@ -80,6 +80,7 @@ bfs = AgentMaze(env,
                 Node.get_first,     # Remove do início
                 lambda s,s_neighbors: 0.0, 
                 lambda s,G: 0.0)
+```
 
 ### 2. Busca em profundidade (DFS)
 
@@ -97,4 +98,4 @@ dfs = AgentMaze(env,
                 Node.get_last,      # Remove do fim
                 lambda s,s_neighbors: 1.0, 
                 lambda s,G: 0.0)
-
+```
