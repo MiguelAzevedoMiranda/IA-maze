@@ -80,3 +80,21 @@ bfs = AgentMaze(env,
                 Node.get_first,     # Remove do início
                 lambda s,s_neighbors: 0.0, 
                 lambda s,G: 0.0)
+
+### 2. Busca em profundidade (DFS)
+
+O DFS explora um caminho o mais fundo possível antes de fazer "backtrack" e tentar outro. Ele encontra um caminho, mas não necessariamente o mais curto.
+
+* **Como?** Usando uma **Pilha (LIFO - Last-In, First-Out)**.
+* **Implementação no código:**
+    * `add_fcn`: `Node.add_last` (adiciona no final da lista)
+    * `get_fcn`: `Node.get_last` (remove do final da lista `F.pop(-1)`)
+
+```python
+# O agente 'dfs' usa a fronteira como uma Pilha
+dfs = AgentMaze(env, 
+                Node.add_last,      # Adiciona no fim
+                Node.get_last,      # Remove do fim
+                lambda s,s_neighbors: 1.0, 
+                lambda s,G: 0.0)
+
